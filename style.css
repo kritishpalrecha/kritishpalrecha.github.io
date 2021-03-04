@@ -1,0 +1,43 @@
+.grid{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(244, 247, 236);
+    border:solid;
+
+
+}
+#title{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 150px;
+    font-size: 5vmax;
+    font-family: fantasy;
+}
+h3{
+    margin-left: 180px;
+    position: absolute;
+    margin-top: 470px;
+    font-family: Impact, fantasy;
+    
+}
+button{
+    margin-left: 160px;
+    border-radius:10px ;
+    font-family:fantasy;
+}
+.grid div{
+    height: 20px;
+    width: 20px;
+    
+}   
+.orange{
+    background-color:rgb(238, 86, 48);
+    
+
+}  
+    
+
