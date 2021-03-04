@@ -10,21 +10,32 @@
 
 
 }
+#control{
+    margin-left: 112px;
+    position: absolute;
+    margin-top: 470px;
+    font-family: Impact, fantasy;
+
+}
 #title{
     position: absolute;
-    margin-left: 400px;
+    margin-left: 350px;
     margin-top: 150px;
     font-size: 5vmax;
     font-family: fantasy;
 }
+.design{
+    border-radius: 10px ;
+    margin-left: 20px;
+}
 h3{
-    margin-left: 180px;
+    margin-left: 170px;
     position: absolute;
     margin-top: 470px;
     font-family: Impact, fantasy;
     
 }
-button{
+#start-button{
     margin-left: 160px;
     border-radius:10px ;
     font-family:fantasy;

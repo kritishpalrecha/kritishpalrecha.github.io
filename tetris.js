@@ -3,6 +3,9 @@
      let squares= Array.from(document.querySelectorAll('.grid div'))
      const scoredisplay=document.querySelector('#score')
      const startbtn=document.querySelector('#start-button')
+     const leftbtn=document.querySelector('#left')
+     const rotbtn=document.querySelector('#rotate')
+     const rightbtn=document.querySelector('#right')
      let colours=["orange"]
 
      const width =10 ;
@@ -59,7 +62,10 @@
     var speed= 700
     
     document.addEventListener("keyup",control)
-   
+    leftbtn.addEventListener('click',moveleft)
+    rightbtn.addEventListener('click',moveright)
+    rotbtn.addEventListener('click',rotate)
+    
 
     
     function control(e){
