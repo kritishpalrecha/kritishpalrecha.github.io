@@ -1,13 +1,15 @@
  document.addEventListener('DOMContentLoaded', ()=> {
      const grid =document.querySelector('.grid')
      let squares= Array.from(document.querySelectorAll('.grid div'))
-     const scoredisplay=document.querySelector('#score')
+     
      const startbtn=document.querySelector('#start-button')
      const leftbtn=document.querySelector('#left')
      const rotbtn=document.querySelector('#rotate')
      const rightbtn=document.querySelector('#right')
      let colours=["orange"]
-
+     let count=0
+    
+    
      const width =10 ;
      let nextchoice=0
 
@@ -59,7 +61,7 @@
     current.forEach( index => {
         squares[currentPos+index ].classList.remove(colours[colour])
     })}
-    var speed= 700
+    var speed= 600
     
     document.addEventListener("keyup",control)
     leftbtn.addEventListener('click',moveleft)
@@ -102,14 +104,17 @@
      function freeze()   
     {
         if(current.some(index=> squares[currentPos+index+width].classList.contains('taken'))){
+
             
             current.forEach(index=> squares[currentPos+index].classList.add('taken'))
             choice=Math.floor(Math.random()*allTetrominos.length)
-
+            count++
+            document.getElementById('score').innerText=count
             current=allTetrominos[choice][rot]
             
             currentPos=4
             draw()
+            
 
         }
     }

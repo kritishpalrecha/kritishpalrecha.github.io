@@ -41,6 +41,8 @@ h3{
 #start-button{
     margin-left: 140px;
     border-radius:10px ;
+    font-size:large;
+    font-stretch: expanded;
     font-family: 'Ravi Prakash', cursive;
 }
 .grid div{
