@@ -10,21 +10,24 @@
 
 
 }
+body{
+    background-color: rgb(77, 207, 240);
+}
 #control{
     margin-left: 112px;
     position: absolute;
     margin-top: 470px;
-    font-family: Impact, fantasy;
+    font-family: Impact fantasy;
 
 }
 #title{
     position: absolute;
-    margin-left: 300px;
+    margin-left: 320px;
     margin-top: 150px;
     font-size: 5vmax;
-    font-family: fantasy Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
-.design{
+    .design{
     border-radius: 10px ;
     margin-left: 20px;
 }
