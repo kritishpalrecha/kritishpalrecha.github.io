@@ -17,7 +17,7 @@ body{
     margin-left: 100px;
     position: absolute;
     margin-top: 470px;
-    font-family: Impact fantasy;
+    font-family: 'Ravi Prakash', cursive;
 
 }
 #title{
@@ -25,7 +25,7 @@ body{
     margin-left: 310px;
     margin-top: 150px;
     font-size: 5vmax;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: 'Ravi Prakash', cursive;
 }
     .design{
     border-radius: 10px ;
@@ -35,13 +35,13 @@ h3{
     margin-left: 150px;
     position: absolute;
     margin-top: 470px;
-    font-family: Impact, fantasy;
+    font-family: 'Ravi Prakash', cursive;
     
 }
 #start-button{
     margin-left: 140px;
     border-radius:10px ;
-    font-family:fantasy;
+    font-family: 'Ravi Prakash', cursive;
 }
 .grid div{
     height: 20px;
