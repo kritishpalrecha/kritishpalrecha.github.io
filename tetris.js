@@ -8,6 +8,7 @@
      const rightbtn=document.querySelector('#right')
      let colours=["orange"]
      let count=0
+     let speed= 550
     
     
      const width =10 ;
@@ -61,13 +62,14 @@
     current.forEach( index => {
         squares[currentPos+index ].classList.remove(colours[colour])
     })}
-    var speed= 600
+    
     
     document.addEventListener("keyup",control)
     leftbtn.addEventListener('click',moveleft)
     rightbtn.addEventListener('click',moveright)
     rotbtn.addEventListener('click',rotate)
     
+   
 
     
     function control(e){
@@ -84,8 +86,14 @@
         {
             rotate()
         }
-        
- 
+        else if(e.keyCode===40)
+        {
+            clearInterval(timer)
+            let spd=300
+            timer=setInterval(movedown,spd)
+            
+            
+        }
 
     }
 
@@ -98,6 +106,7 @@
             currentPos += width
             draw()
             freeze()
+            gameover()
    
         }
 
@@ -114,7 +123,8 @@
             
             currentPos=4
             draw()
-            
+            gameover()
+   
 
         }
     }
@@ -173,6 +183,12 @@ startbtn.addEventListener('click',()=>{
         
     }
 })
+function gameover(){
+    if(current.some(index=> squares[currentPos+index].classList.contains('taken')))
+    {document.getElementById('score').innerText='end'
+    clearInterval(timer)
+}
+}
 
  }) 
 
