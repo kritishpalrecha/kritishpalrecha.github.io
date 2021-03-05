@@ -1,6 +1,6 @@
 .grid{
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 80px;
     width: 200px;
     height: 400px;
     display: flex;
@@ -14,7 +14,7 @@ body{
     background-color: rgb(77, 207, 240);
 }
 #control{
-    margin-left: 112px;
+    margin-left: 100px;
     position: absolute;
     margin-top: 470px;
     font-family: Impact fantasy;
@@ -22,24 +22,24 @@ body{
 }
 #title{
     position: absolute;
-    margin-left: 320px;
+    margin-left: 310px;
     margin-top: 150px;
     font-size: 5vmax;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
     .design{
     border-radius: 10px ;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 h3{
-    margin-left: 170px;
+    margin-left: 150px;
     position: absolute;
     margin-top: 470px;
     font-family: Impact, fantasy;
     
 }
 #start-button{
-    margin-left: 160px;
+    margin-left: 140px;
     border-radius:10px ;
     font-family:fantasy;
 }
