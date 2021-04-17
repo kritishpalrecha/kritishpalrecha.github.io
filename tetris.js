@@ -68,7 +68,7 @@
     leftbtn.addEventListener('click',moveleft)
     rightbtn.addEventListener('click',moveright)
     rotbtn.addEventListener('click',rotate)
-    
+
    
 
     
@@ -86,14 +86,7 @@
         {
             rotate()
         }
-        else if(e.keyCode===40)
-        {
-            clearInterval(timer)
-            let spd=300
-            timer=setInterval(movedown,spd)
-            
-            
-        }
+
 
     }
 
